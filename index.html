@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <!-- css stylesheet -->
+	<link href = "./css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  <div id="main-container">
+    <!-- Controls -->
+    <div class="control-container">
+      <h2>Controls</h2>
+      <!-- Base color -->
+      <div class="controls">
+        <label for="base">Base Color</label>
+        <input id="base" type="color" name="base" value="#00adff">
+      </div>
+
+      <!-- Blur -->
+      <div class="controls">
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+      </div>
+
+      <!-- Spacing -->
+      <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="47" value="10" data-sizing="px">
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="image-container">
+      <img src="./images/bump-to-hydrant.jpg" alt="Andrew Dobrzanski skateboarding a bump to hydrant">
+      <!-- <img src="http://www.myraspberrypiandi.site/images/bump-to-hydrant.jpg" alt="Andrew Dobrzanski skateboarding a bump to hydrant"> -->
+    </div>
+  </div>
+  <footer>
+    <!-- javascript -->
+    <script src="./js/updateVariables.js"></script>
+  </footer>
+</body>
+</html>

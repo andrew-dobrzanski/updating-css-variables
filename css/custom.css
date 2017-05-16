@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  background: #fff;
+  color: #333;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+:root {
+  --base: #00adff;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+#main-container {
+  height: 575px;
+  padding: 30px;
+  background-color: #333;
+}
+
+.control-container {
+  width: 33%;
+  float: left;
+  min-height: 465px;
+  background-color: #f9f9f9;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.control-container h2 {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+  padding-top: 15px;
+}
+
+.controls {
+  margin: 0px 0px 25px 15px;
+  padding-left: 5px;
+  font-size: 30px;
+}
+
+.image-container {
+  width: 67%;
+  float: left;
+}
+
+.image-container img {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .control-container {
+    width: 100%;
+    min-height: 300px;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-container img {
+    width: 90%;
+  }
+}
